@@ -88,6 +88,7 @@ class _IncomePageState extends State<IncomePage> {
                                           },
                                           callBack: (income) {
                                             incomes.add(income);
+                                            widget.incomesCallBack(incomes);
                                             addToShared(incomes);
                                             setState(() {});
                                           },
